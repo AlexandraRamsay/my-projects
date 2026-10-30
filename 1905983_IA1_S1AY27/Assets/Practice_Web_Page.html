@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIT Student Page</title>
+
+  <style>
+    h1,
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        background-color: #160051;
+        ;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a:hover {
+        background-color: #5d6c89;
+
+    }
+
+    .navbar li {
+        float: left;
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin-top: 20px; 
+      margin-right: 20px;
+      float:left;
+    }
+    
+    .table {text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1>University of Technology, Jamaica</h1>
+    <h2>SCIT Student Page</h2>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+      <div class="wrapper">
+        <img src="img_student.jpg" alt="University Student" width="350" height="600">
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>Hi, I'm Maya Atkinson, a second-year student studying Computing and Information Technology. I love building things with code, from web apps to small automation tools, and I'm working toward a career in software development. Outside of class, I tutor first-years, hike, and hunt for good coffee.</p>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <h3>My Courses</h3>
+
+        <ul>
+            <li>PELICS</li>
+            <li>Computer Logics</li>
+            <li>Web Programming</li>
+            <li>Programming 1</li>
+        </ul>
+        <br>
+        
+        <h4> Weekly Schedule</h4>
+        <table class="table" border="1" cellspacing= "0" cellpadding= "10">
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+            </tr>
+            <tr>
+                <td>5pm-6pm</td>
+                <td>PELICS Tutorial</td>
+                <td>Computer Logics Lecture</td>
+                <td>-</td>
+                <td>PELICS Lecture</td>
+            </tr>
+            <tr>
+                <td>6pm-7pm</td>
+                <td>Programming 1 Lecture</td>
+                <td rowspan="2">Programming 1 Tutorial</td>
+                <td rowspan="2">Web Programming Tutorial</td>
+                <td>Computer Logics Tutorial</td>
+            </tr>
+            
+            <tr>
+                <td>7pm-8pm</td>
+                <td rowspan="2">Programming 1 Lab</td>
+                <td>Web Programming Lecture</td>
+            </tr>
+            
+            <tr>
+                <td>8pm-9pm</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+</body>
+
+</html>
