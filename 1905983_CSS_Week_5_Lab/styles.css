@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --White: hwb(0 100% 0%);
+  --Pale-blue: hsl(225, 100%, 94%); /*background*/
+  --Bright-blue: hsl(245, 75%, 52%); /*button*/
+  --Very-pale-blue: hsl(225, 100%, 98%); /* annual plan area */
+  --Desaturated-blue: hsl(224, 23%, 55%); /* para, $$, cancelOrderBtn */
+  --Dark-blue: hsl(223, 47%, 23%); /* AnnualPLanTxt, OrderSummaryTxt */
+  --fw1: 500;
+  --fw2: 700;
+  --fw3: 900;
+  --fsize1: 1rem; /*paragraph*/
+  --fsize2: 2rem; /*title*/
+  --hvr-clr: rgb(105, 101, 228);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.summary {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--White);
+    border-radius:20px;
+    color: var(--Desaturated-blue);
+    margin: 50px auto;
+    overflow:hidden;
+}
+
+.image {
+    width: 100%;
+}
+
+.container { 
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-weight: var(--fw3);
+    color: var(--Dark-blue);
+    font-size: var(--fsize2);
+}
+
+.desc {
+    font-size: var(--fsize1);
+    padding: 20px;
+    line-height: 25px;
+}
+
+.plan{
+    font-size: var(--fsize1);
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-desc{
+    font-weight: var(--fw1);
+    color: var(--Dark-blue);
+    line-height: 25px;
+}
+
+.planCost{
+    color: var(--Desaturated-blue);
+}
+
+.plan a:hover{
+    text-decoration: none;
+    color: var(--hvr-clr);
+    font-weight: var(--fw2);
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    font-weight: var(--fw2);
+    cursor: pointer;
+}
+
+.proceedBtn{
+    background-color: var(--Bright-blue);
+    color: var(--White);
+    box-shadow: 0 20px 30px -15px rgb(156, 153, 226);
+    margin-top: 25px;
+}
+
+.proceedBtn:hover{
+    background-color: var(--hvr-clr);
+}
+
+.cancelBtn{
+    background-color: var(--White);
+    color: var(--Desaturated-blue);
+    margin-top: 15px;
+}
+
+.cancelBtn:hover {
+    color: var(--Dark-blue);
+}    
+
+@media (max-width: 375px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+}
