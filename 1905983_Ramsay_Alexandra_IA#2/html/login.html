@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Coding Conf</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="registration-page"> 
+    <header>
+    <nav class="navbar">
+      <img src="../assets/images/logo-full.svg" alt="Coding Conf logo">
+        <ul class="navtab"> 
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="login.html">Register</a></li>
+        </ul>
+    </nav>
+    </header>
+   <main class="page" id="page-content">
+        <section class="intro">
+            <img src="/assets/images/logo-full.svg" alt="Coding Conf">
+            <h1>Your Journey to Coding Conf 2026 Starts Here!</h1>
+            <p>Secure your spot at next year's biggest coding conference.</p>
+        </section>
+
+        <form class="ticket-form" id="ticket-form" action="#" method="post" novalidate>
+        <p>Upload Avatar</p>
+        <label class="drop-zone" for="avatar">
+            <img src="/assets/images/icon-upload.svg" alt="" class="upload-icon" id="upload-icon">
+            <span id="upload-text">Drag and drop or click to upload</span>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="file-drop">
+        </label>
+        <div id="preview-actions"></div>
+       
+
+        <div class="drop-zone-instructions">
+            <p id="avatar-hint"><img class="hint-icon" src="/assets/images/icon-info.svg" alt=""> Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </div>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <p id="email-hint"></p>
+
+        <label for="github">GitHub Username</label>
+        <input type="text" id="github" name="github" placeholder="@yourusername">
+
+        <button type="submit">Generate My Ticket</button>
+    </form>
+</main>
+    
+    <script src="../js/validation.js"></script>
+</body>
+</html>
